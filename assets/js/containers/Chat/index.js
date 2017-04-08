@@ -6,7 +6,7 @@ import MessageInput from '../../components/MessageInput';
 
 class Chat extends Component {
   render() {
-    const { chatname } = this.props.params;
+    const { chatname } = this.props;
 
     return (
       <div className="chat">
