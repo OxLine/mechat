@@ -24,8 +24,10 @@ class Login extends Component {
       <DocumentTitle title="Login">
         <div className="container">
           <Navbar />
+          <div className="LoginForm">
           <LoginForm onSubmit={this.handleLogin} />
-        </div>
+          </div>
+      </div>
       </DocumentTitle>
     );
   }

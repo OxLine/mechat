@@ -21,20 +21,21 @@ class LoginForm extends Component {
       <form
         onSubmit={handleSubmit(this.handleSubmit)}
       >
-        <h3>Login to Mechat</h3> 
+        <h3>Login to Mechat</h3>
         <Field name="email" type="text" component={Input} placeholder="Email" />
         <Field name="password" type="password" component={Input} placeholder="Password" />
-        <button
+        <div className="buttons">
+      <button
           type="submit"
           disabled={submitting}
           className="btn"
         >
-          {submitting ? 'Logging in...' : 'Login'}  
+          {submitting ? 'Logging in...' : 'Login'}
         </button>
-        <hr />
-        <Link to="/signup" className="btn">
+        <Link to="/signup" className="btn new-account">
           Create a new account
         </Link>
+      </div>
       </form>
     );
   }

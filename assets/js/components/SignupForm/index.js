@@ -42,18 +42,20 @@ class SignupForm extends Component {
           placeholder="Password"
           className="form-control"
         />
-        <button
+      <div className="buttons2">
+          <button
           type="submit"
           disabled={submitting}
           className="btn"
         >
           {submitting ? 'Submitting...' : 'Sign up'}
         </button>
-        <hr />
-        <Link to="/Login" className="btn">
+
+        <Link to="/Login" className="btn signins">
           Login to your account
         </Link>
-      </form> 
+      </div>
+      </form>
     );
   }
 }
