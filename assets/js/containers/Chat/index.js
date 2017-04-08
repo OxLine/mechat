@@ -24,7 +24,7 @@ class Chat extends Component {
       <div className="chat">
         <MembersNumber username={username}/>
         <MessageList username={username}/>
-        <MessageForm onSubmit={this.handleAddTasks}/>
+        <MessageForm onSubmit={this.handleSubmitMessage}/>
       </div>
     );
   }
