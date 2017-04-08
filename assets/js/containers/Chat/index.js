@@ -6,13 +6,13 @@ import MessageInput from '../../components/MessageInput';
 
 class Chat extends Component {
   render() {
-    const { chatname } = this.props;
+    const { username } = this.props;
 
     return (
       <div className="chat">
-        <MembersNumber chatname={chatname}/>
-        <MessageList chatname={chatname}/>
-        <MessageInput chatname={chatname}/>
+        <MembersNumber username={username}/>
+        <MessageList username={username}/>
+        <MessageInput username={username}/>
       </div>
     );
   }

@@ -12,9 +12,9 @@ class Home extends Component {
   }
 
   renderChat() {
-    const { chatname } = this.props.params;
-    if (chatname) {
-      return <Chat chatname={chatname}/>;
+    const { username } = this.props.params;
+    if (username) {
+      return <Chat username={username}/>;
     }
     return(
       <div className="empty-chat">
