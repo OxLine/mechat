@@ -2,11 +2,14 @@
   .container {
     width: 100%;
     margin-left: 0;
+    .btn {
+      width: 100%;
+    }
   }
 }
-
 form{
   border:3px solid#6a1b9a;
+  padding: 20px;
 }
 
 input [type=text],
@@ -19,7 +22,7 @@ input [type=password]{
   box-sizing: border-box;
 }
 
-.LoginForm .btn {
+.SignupForm .btn {
   background-color: #6a1b9a;
   color: white;
   width: auto;
@@ -30,7 +33,12 @@ input [type=password]{
   cursor: pointer;
 
 }
-.LoginForm .new-account{
+
+.btn:hover{
+  opacity: 0.8;
+}
+
+.SignupForm .signins{
   margin-left: 5px;
 
 }
@@ -39,12 +47,12 @@ input [type=password]{
   opacity: 0.8;
 }
 
-  .LoginForm {
+  .SignupForm {
     margin: 50px auto;
     width: 610px;
   }
 
-  .buttons{
+  .buttons2{
 margin:0 auto;
 text-align: center;
   }

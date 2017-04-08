@@ -22,9 +22,11 @@ class Signup extends Component {
   render() {
     return (
       <DocumentTitle title="Signup">
-        <div className="container">
-          <Navbar />
-          <SignupForm onSubmit={this.handleSignup} />
+        <div>
+          <div className="container"><Navbar /></div>
+          <div className="SignupForm">
+            <SignupForm onSubmit={this.handleSignup} />
+          </div>
         </div>
       </DocumentTitle>
     );
