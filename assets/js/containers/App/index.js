@@ -1,4 +1,3 @@
-// @flow
 import React, { Component } from 'react';
 import { Router, IndexRoute, Route, Redirect } from 'react-router';
 import { connect } from 'react-redux';
@@ -50,6 +49,7 @@ class App extends Component {
 
         <Route path="/" component={MatchAuthenticated}>
           <IndexRoute component={Home} />
+          <Route path="/chat/:chatname" component={Home} />
         </Route>
 
         <Route path="*" component={ NotFound } />
