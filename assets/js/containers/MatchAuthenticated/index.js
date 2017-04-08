@@ -14,16 +14,16 @@ class MatchAuthenticated extends Component {
   componentDidMount() {
     const { dispatch, isAuthenticated, willAuthenticate } = this.props;
 
-    if ( !isAuthenticated && !willAuthenticate ) { 
-      dispatch(push('/login')); 
+    if ( !isAuthenticated && !willAuthenticate ) {
+      dispatch(push('/login'));
     }
   }
 
   componentDidUpdate(prevProps, prevState) {
     const { dispatch, isAuthenticated, willAuthenticate } = this.props;
 
-    if ( !isAuthenticated && !willAuthenticate ) { 
-      dispatch(push('/login')); 
+    if ( !isAuthenticated && !willAuthenticate ) {
+      dispatch(push('/login'));
     }
   }
 
