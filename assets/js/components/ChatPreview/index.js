@@ -6,7 +6,7 @@ class ChatPreview extends Component {
 
     return (
       <div className="container">
-        <div className="card">
+        <div className="card dialog-preview">
           <div className="card-content">
             <p>{ username }</p>
             <p>{ unreaded_messages_number }</p>

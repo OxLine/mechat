@@ -1,0 +1,59 @@
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+    margin-left: 0;
+    .btn {
+      width: 100%;
+    }
+  }
+}
+form{
+  border:3px solid#6a1b9a;
+  padding: 20px;
+}
+
+.container .dialog-preview {
+  border-top: 1px solid grey;
+}
+
+.card{
+  background-color: #6a1b9a;
+  color: white;
+  width: 350px;
+  height: 90px;
+  border: none;
+  padding: 0 5px ;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.container{
+  margin-right:100%;
+}
+
+.container__header{
+  width: 150px;
+
+}
+
+.empty-chat{
+  float: right;
+  text-align: center;
+  margin-bottom: 100px;
+
+}
+
+.card:hover{
+  opacity: 0.8
+}
+
+body{
+  margin: 0;
+}
+
+.container_width{
+  width: 960px;
+  margin: auto;
+}

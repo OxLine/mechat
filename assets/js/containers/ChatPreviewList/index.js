@@ -11,7 +11,23 @@ class ChatPreviewList extends Component {
   }
 
   render() {
-    const dialogs = this.props.dialogs || [];
+    const dialogs = this.props.dialogs || [
+      {
+        username: 'Alex',
+        last_message: 'Dima hui',
+        unreaded_messages_number : 18
+      },
+      {
+        username: 'Alex',
+        last_message: 'Dima hui',
+        unreaded_messages_number : 18
+      },
+      {
+        username: 'Alex',
+        last_message: 'Dima hui',
+        unreaded_messages_number : 18
+      }
+    ];
 
     return (
       <div className="chat-preview-list">

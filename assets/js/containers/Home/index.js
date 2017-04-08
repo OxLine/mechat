@@ -27,7 +27,7 @@ class Home extends Component {
     return (
       <DocumentTitle title="Home">
         <div>
-          <div className="container">
+          <div className="container container_width">
             <Search />
             <ChatPreviewList />
             {this.renderChat()}
