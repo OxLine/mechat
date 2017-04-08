@@ -22,6 +22,15 @@ defmodule Mechat.Web.Router do
     delete "/sessions", SessionController, :delete
     post "/sessions/refresh", SessionController, :refresh
     resources "/users", UserController, only: [:create]
+    get "/dialogs", DialogController, :index
+    get "/messages/:username", MessageController, :show
+    delete "/messages/:id", MessageController, :delete
+    post "/messages/:username", MessageController, :create
+    # post "/messages/read/:message_list", :read_messages
+ 
+    # resources "/dialogs", DialogController, except: [:new, :edit]
+    # resources "/messages", MessageController, except: [:new, :edit]
+    # resources "/user_message", UserMessageController, except: [:new, :edit]
   end
 
   scope "/", Mechat.Web do
