@@ -49,7 +49,7 @@ class App extends Component {
 
         <Route path="/" component={MatchAuthenticated}>
           <IndexRoute component={Home} />
-          <Route path="/chat/:chatname" component={Home} />
+          <Route path="/chat/:username" component={Home} />
         </Route>
 
         <Route path="*" component={ NotFound } />
