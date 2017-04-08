@@ -1,10 +1,22 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import MembersNumber from '../MembersNumber';
 import MessageList from '../MessageList';
-import MessageInput from '../../components/MessageInput';
+import MessageForm from '../../components/MessageForm';
+import { submitMessage } from '../../actions/messages';
 
 class Chat extends Component {
+  constructor(props) {
+    super(props);
+    this.handleSubmitMessage = this.handleSubmitMessage.bind(this);
+  }
+
+  handleSubmitMessage (data) {
+    return this.props.submitMessage({...data, username: this.props.username},
+                                this.context.router);
+  }
+
   render() {
     const { username } = this.props;
 
@@ -12,10 +24,10 @@ class Chat extends Component {
       <div className="chat">
         <MembersNumber username={username}/>
         <MessageList username={username}/>
-        <MessageInput username={username}/>
+        <MessageForm onSubmit={this.handleAddTasks}/>
       </div>
     );
   }
 }
 
-export default Chat;
+export default connect(null, { submitMessage })(Chat);
